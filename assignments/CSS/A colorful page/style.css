@@ -1,0 +1,15 @@
+body {
+    background: url("./images/mike-yukhtenko-a2kD4b0KK4s-unsplash.jpg") no-repeat;
+    background-size: 100vw 100vh;
+}
+
+.ngjyraplot {
+    color: antiquewhite;
+    background: rgb(63, 94, 251);
+    background: radial-gradient(circle, rgba(63, 94, 251, 1) 0%, rgba(252, 70, 107, 1) 100%);
+}
+
+#navbar {
+    color: rgb(255, 255, 255);
+    background-color: rgba(255, 235, 205, 0.2);
+}
