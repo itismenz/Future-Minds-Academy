@@ -1,0 +1,29 @@
+.cards a {
+    display: block;
+    text-decoration: none;
+    color: black;
+    border: 1px solid #7f7f7f;
+    padding: 10px;
+}
+
+.cards a:hover {
+    background-color: antiquewhite;
+    box-shadow: 2px 2px 4px rgba(100, 100, 100, 100);
+}
+
+.cards li {
+    list-style: none;
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+.cards img {
+    width: 200px;
+}
+
+.title {
+    border: 3px solid rgb(115, 11, 11);
+    text-align: center;
+    background-color: blanchedalmond;
+}
