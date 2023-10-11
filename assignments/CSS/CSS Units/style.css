@@ -1,0 +1,42 @@
+h1 {
+    font-size: 2em;
+    text-decoration: underline;
+    padding: 0;
+    margin: 0;
+}
+
+section {
+    height: 25vh;
+}
+
+section:nth-child(odd) {
+    background: rgb(241, 225, 225);
+    color: black;
+    font-family: monospace;
+
+
+}
+
+section:nth-child(even) {
+    background-color: grey;
+    color: white;
+    font-family: sans-serif;
+}
+
+hr {
+    border: solid red;
+    width: 33%;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+section:nth-child(odd):hover {
+    background-color: rgba(127, 255, 212, 0.516);
+}
+
+section:nth-child(even):hover {
+    color: rgba(127, 255, 212, 0.516);
+}
