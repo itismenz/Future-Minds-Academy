@@ -1,0 +1,59 @@
+.katrori {
+    width: 400px;
+    background-color: whitesmoke;
+    box-shadow: 0px 0px 30px -9px rgba(0, 0, 0, 0.75);
+    position: relative;
+    /* margin-bottom: 50px; */
+    margin: 40px 0px;
+}
+
+.titulli {
+    position: absolute;
+    top: -40px;
+    padding-left: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.shkrimi {
+    padding: 10px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.ikona {
+    position: absolute;
+    padding: 4px;
+    background-color: red;
+    border-radius: 50%;
+    top: -10px;
+    right: -10px;
+
+}
+
+.katrori:hover {
+    box-shadow: 0px 0px 51px 15px rgba(0, 0, 0, 0.4);
+    height: 80px;
+    cursor: url(https://ani.cursors-4u.net/games/gam-16/gam1571.ani), url(https://ani.cursors-4u.net/games/gam-16/gam1571.png), auto !important;
+}
+
+.ikona:hover {
+    background-color: black;
+    color: red;
+    cursor: crosshair;
+}
+
+.video {
+    width: 300px;
+    border: dotted darkviolet;
+    border-radius: 18px;
+    padding: 10px;
+    text-align: center;
+    position: fixed;
+    bottom: 5px;
+    right: 5px;
+    box-shadow: 0px 0px 30px -9px rgba(0, 0, 0, 0.75);
+}
+
+.video:hover {
+    box-shadow: 0px 0px 51px 15px rgba(0, 0, 0, 0.4);
+    cursor: url(https://ani.cursors-4u.net/games/gam-16/gam1571.ani), url(https://ani.cursors-4u.net/games/gam-16/gam1571.png), auto !important;
+}
