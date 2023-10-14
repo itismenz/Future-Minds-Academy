@@ -3,7 +3,6 @@
     background-color: whitesmoke;
     box-shadow: 0px 0px 30px -9px rgba(0, 0, 0, 0.75);
     position: relative;
-    /* margin-bottom: 50px; */
     margin: 40px 0px;
 }
 
@@ -42,6 +41,7 @@
 }
 
 .video {
+    background-color: rgb(214, 207, 207);
     width: 300px;
     border: dotted darkviolet;
     border-radius: 18px;
@@ -54,6 +54,7 @@
 }
 
 .video:hover {
+    background-color: white;
     box-shadow: 0px 0px 51px 15px rgba(0, 0, 0, 0.4);
     cursor: url(https://ani.cursors-4u.net/games/gam-16/gam1571.ani), url(https://ani.cursors-4u.net/games/gam-16/gam1571.png), auto !important;
 }
