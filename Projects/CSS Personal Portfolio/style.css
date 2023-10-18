@@ -1,0 +1,65 @@
+hr {
+    width: 75%;
+    border: solid black 1px;
+}
+
+nav ul li {
+    text-align: center;
+    display: inline;
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.who {
+    text-align: center;
+    background-color: blanchedalmond;
+    border: solid black 3px;
+    border-radius: 35px;
+
+}
+
+section {
+    width: 70vw;
+    padding: 20px;
+    margin: auto;
+}
+
+.education {
+    text-align: center;
+    background-color: rgb(255, 59, 59);
+    border: solid black 3px;
+    border-radius: 35px;
+    list-style: none;
+}
+
+.skills {
+    text-align: center;
+    background-color: rgb(75, 219, 82);
+    border: solid black 3px;
+    border-radius: 35px;
+}
+
+.myprojects {
+    text-align: center;
+    background-color: rgb(255, 0, 225);
+    border: solid black 3px;
+    border-radius: 35px;
+}
+
+.ikona {
+    position: relative;
+    width: 5vw;
+}
+
+header {
+    width: 70vw;
+    padding: 20px;
+    margin: 10px;
+    background-color: rgb(227, 205, 248);
+    text-align: center;
+    border: solid black 3px;
+    border-radius: 35px;
+}

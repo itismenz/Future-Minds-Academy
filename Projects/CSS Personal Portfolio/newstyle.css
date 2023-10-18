@@ -1,0 +1,144 @@
+body {
+    cursor: url(https://ani.cursors-4u.net/games/gam-16/gam1571.ani), url(https://ani.cursors-4u.net/games/gam-16/gam1571.png), auto !important;
+    margin: 0;
+    padding: 0;
+    background-image: url(./assets/images/simple.jpg);
+    background-size: cover;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+section {
+    width: 70vw;
+    margin: auto;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    padding: 20px;
+    background-color: rgb(171, 171, 170);
+    box-shadow: 1px 1px 22px -4px rgba(0, 0, 0, 0.75);
+    border: solid rgb(255, 255, 255) 3px;
+    border-radius: 70px;
+    text-align: center;
+    color: rgb(0, 0, 0);
+}
+
+header,
+footer {
+    text-align: center;
+    color: rgb(0, 0, 0);
+}
+
+nav ul li {
+    text-align: center;
+    color: aliceblue;
+    display: inline;
+    padding-right: 3vw;
+}
+
+.nobullets {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+
+}
+
+.baza {
+    display: inline-block;
+    text-align: center;
+}
+
+th {
+    background-color: rgb(101, 97, 97);
+}
+
+table {
+    margin: auto;
+}
+
+.ikona {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+}
+
+hr {
+    width: 75%;
+    border: dashed rgb(135, 135, 135);
+}
+
+a {
+    text-decoration: none;
+    color: aqua;
+    cursor: crosshair;
+}
+
+.profili {
+    border: solid rgb(255, 255, 255);
+    border-radius: 50px;
+}
+
+.foot {
+    width: 70vw;
+    margin: 100px auto 0 auto;
+    padding: 20px;
+    background-color: rgb(171, 171, 170);
+    box-shadow: 1px 1px 22px -4px rgba(0, 0, 0, 0.75);
+    border: solid rgb(255, 255, 255) 3px;
+    border-radius: 70px 70px 0px 0px;
+    text-align: center;
+    color: rgb(0, 0, 0);
+
+}
+
+.arrow {
+    position: relative;
+    bottom: 3px;
+    background-color: black;
+    border-radius: 50%;
+}
+
+section:hover {
+    background-color: rgb(237, 239, 240);
+    box-shadow: 1px 1px 22px 4px rgba(0, 0, 0, 0.75);
+
+}
+
+.foot:hover {
+    background-color: rgb(237, 239, 240);
+    box-shadow: 1px 1px 22px 4px rgba(0, 0, 0, 0.75);
+}
+
+input,
+textarea {
+    font-family: inherit;
+    width: 14vw;
+    margin: 3px;
+    border-radius: 0px 20px 0px 20px;
+    background-color: rgb(71, 147, 234);
+
+}
+
+section:hover th,
+section:hover input,
+section:hover textarea {
+    background-color: rgb(189, 189, 189);
+}
+
+input::placeholder,
+textarea::placeholder {
+    text-align: center;
+}
+
+
+.butoni {
+    font-family: inherit;
+    width: 14vw;
+    margin: 3px;
+    padding: 2px;
+    background-color: rgb(11, 67, 67);
+    color: aliceblue;
+}
+
+.myprojects:hover a {
+    color: brown;
+}
