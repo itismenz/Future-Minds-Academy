@@ -10,13 +10,13 @@ body {
     flex-direction: row;
     box-sizing: border-box;
     height: 100vh;
+
 }
 
 .left {
     display: flex;
     flex-direction: column;
     height: 100vh;
-    width: 250px;
     background-color: rgb(45, 45, 86);
     color: aliceblue;
     justify-content: center;
@@ -24,6 +24,8 @@ body {
     padding: 10px;
     line-height: 40px;
     box-sizing: border-box;
+    box-shadow: 1px -1px 22px 5px rgba(0, 0, 0, 0.7);
+
 }
 
 .right {
@@ -36,41 +38,84 @@ body {
 
 }
 
+.seperate {
+    color: rgb(128, 128, 128);
+    font-size: smaller;
+    padding-bottom: 10px;
+
+}
+
 .title {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 10px 0px;
+    padding: 10px 20px;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .picture {
     border-radius: 50%;
+    width: 3rem;
+    height: 3rem;
 }
 
 .author {
     font-size: smaller;
-    color: gray;
+    color: rgb(128, 128, 128);
     margin: 4px 0px;
 }
 
 #css {
     background-color: rgb(88, 168, 3);
     color: aliceblue;
-    padding: 2px;
+    padding: 4px;
+    line-height: 1rem;
 }
 
 #html {
     background-color: rgb(59, 64, 206);
     color: aliceblue;
-    padding: 2px;
+    padding: 4px;
+    line-height: 1rem;
+}
+
+#js {
+    background-color: rgb(244, 46, 46);
+    color: aliceblue;
+    padding: 4px;
+    line-height: 1rem;
 }
 
 .content {
     line-height: 1.2rem;
-    padding-bottom: 4rem;
+    padding: 20px;
 }
 
 nav {
     height: 3rem;
+}
+
+.login-button {
+    background-color: transparent;
+    border: solid;
+    color: white;
+    padding: 5px 15px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.pinned {
+    box-shadow: 1px -1px 22px 5px rgba(0, 0, 0, 0.18);
+    margin-bottom: 20px;
+}
+
+.pinned:hover {
+    box-shadow: 1px -1px 22px 5px rgba(0, 0, 0, 0.39);
+
+}
+
+h5 {
+    color: rgb(196, 196, 211);
 }
