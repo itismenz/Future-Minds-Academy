@@ -1,0 +1,158 @@
+body {
+    font-family: roboto;
+    margin: 0;
+    background: rgb(231, 231, 231);
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-areas:
+        "aside right"
+        "aside right"
+        "aside right";
+}
+
+h1,
+h2 {
+    margin: 0;
+}
+
+.right {
+    grid-area: right;
+    height: 100vh;
+    overflow-y: scroll;
+    padding: 1rem 2rem;
+    box-sizing: border-box;
+}
+
+.header {
+    grid-area: header;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: rgb(88, 88, 88);
+}
+
+.header p {
+    padding: 0;
+    margin: 0;
+}
+
+.aside {
+    background: url(images/sidebar-1.jpg);
+    background-size: cover;
+    background-color: rgba(8, 8, 8, 0.8);
+    background-blend-mode: color-burn;
+    grid-area: aside;
+    height: 100vh;
+    padding: 1rem;
+    width: auto;
+    color: aliceblue;
+    box-sizing: border-box;
+}
+
+.main {
+    grid-area: main;
+    height: 90vh;
+    padding: 0;
+
+}
+
+.footer {
+    background: yellowgreen;
+    grid-area: footer;
+    padding: 0;
+}
+
+
+.listed {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-bottom: 1rem;
+    border-radius: .4rem;
+}
+
+.active {
+    background-color: rgb(194, 30, 104);
+}
+
+.listedLeft {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.navi:hover {
+    background-color: rgba(240, 248, 255, 0.3);
+    cursor: pointer;
+}
+
+#avatar {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+}
+
+.user {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+}
+
+.list a {
+    text-decoration: none;
+}
+
+.list ul li {
+    padding: 0.8rem 0.5rem;
+    width: 100%;
+}
+
+.list ul {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.dash {
+    display: flex;
+    align-items: center;
+    gap: .4rem;
+}
+
+.circle {
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+    color: rgb(184, 185, 185);
+    font-size: 0.1rem;
+    padding: .5rem;
+    box-shadow: 1px -1px 22px -1px rgba(0, 0, 0, .3);
+}
+
+.searchBar {
+    display: flex;
+    align-items: center;
+    gap: .8rem;
+}
+
+#search {
+    padding: 0.3rem;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    border-bottom: solid rgba(163, 163, 163, 0.69) 2px;
+}
+
+#search:focus {
+    border-bottom: solid rgb(212, 46, 174) 2px;
+
+}

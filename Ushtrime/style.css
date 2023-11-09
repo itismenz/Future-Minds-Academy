@@ -1,0 +1,41 @@
+body {
+    margin: 0;
+    background: red;
+    display: grid;
+    grid-template-areas:
+        "aside right right right right right right"
+        "aside right right right right right right"
+        "aside right right right right right right";
+
+
+}
+
+.right {
+    grid-area: right;
+    height: 100vh;
+    overflow-y: scroll;
+}
+
+.header {
+    grid-area: header;
+    background: blue;
+    height: 10vh;
+}
+
+.aside {
+    background: green;
+    grid-area: aside;
+    height: 100vh;
+}
+
+.main {
+    background: yellow;
+    grid-area: main;
+    height: 90vh;
+
+}
+
+.footer {
+    background: yellowgreen;
+    grid-area: footer;
+}
