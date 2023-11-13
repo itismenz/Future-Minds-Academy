@@ -48,13 +48,81 @@ h2 {
     width: auto;
     color: aliceblue;
     box-sizing: border-box;
+    overflow-y: scroll;
+}
+
+.aside::-webkit-scrollbar {
+    display: none;
 }
 
 .main {
     grid-area: main;
     height: 90vh;
     padding: 0;
+    display: flex;
+    flex-direction: column;
+}
 
+.locations {
+    display: grid;
+    grid-template-columns: 45% 60%;
+    margin-top: 6rem;
+    background-color: white;
+    border-radius: 1rem;
+    padding: 1rem;
+    box-sizing: border-box;
+    box-shadow: 0px 5px 10px rgba(90, 116, 148, .3);
+
+}
+
+.firstLine {
+    grid-column: 1 / 5;
+}
+
+.content {
+    margin-left: 0.7rem;
+}
+
+.green {
+    background-color: rgb(81, 190, 81);
+    color: white;
+    padding: 1rem;
+    border-radius: 0.2rem;
+    margin-top: -2rem;
+}
+
+.secondLine {
+    grid-column: 1/5;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+
+table {
+    border-collapse: collapse;
+    white-space: nowrap;
+    font-weight: 100;
+    margin-top: 2rem;
+}
+
+td {
+    padding: 0.2rem 0.5rem;
+}
+
+tr:not(:last-child) {
+    border-bottom: 1px solid rgb(184, 185, 185);
+    ;
+}
+
+.country {
+    height: 1rem;
+}
+
+.map {
+    height: 200px;
+    overflow: hidden;
 }
 
 .footer {
@@ -135,7 +203,7 @@ h2 {
     color: rgb(184, 185, 185);
     font-size: 0.1rem;
     padding: .5rem;
-    box-shadow: 1px -1px 22px -1px rgba(0, 0, 0, .3);
+    box-shadow: 0px 5px 10px rgba(90, 116, 148, .3);
 }
 
 .searchBar {
