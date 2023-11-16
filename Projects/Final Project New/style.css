@@ -107,10 +107,11 @@ header p {
     box-sizing: border-box;
     overflow-y: scroll;
     box-shadow: 2px 0px 9px rgba(0, 0, 0, .8);
+    transition: background-color .6s ease-in-out;
+
 }
 
 .aside:hover {
-    transition: ease-in-out .4s;
     background-color: rgba(8, 8, 8, 0.6);
     background-blend-mode: color-burn;
 }
@@ -479,9 +480,7 @@ li {
     box-shadow: 0px 5px 10px rgba(90, 116, 148, .3);
 }
 
-.headerIcons {
-    position: relative;
-}
+
 
 .lo:focus~.hidd {
     display: block;
@@ -496,13 +495,17 @@ li {
     box-shadow: 0px 5px 10px rgba(90, 116, 148, .3);
 }
 
+.headerIcons {
+    position: relative;
+}
+
 .listings::-webkit-scrollbar {
     width: 11px;
     height: 11px;
 }
 
 .listings::-webkit-scrollbar-button {
-width: 0px;
+    width: 0px;
     height: 0px;
 }
 
@@ -536,6 +539,10 @@ width: 0px;
 
 .listings::-webkit-scrollbar-corner {
     background: transparent;
+}
+
+.hidd2 {
+    display: none;
 }
 
 
@@ -578,10 +585,55 @@ width: 0px;
 
     }
 
-
-
     .cardList {
         min-width: 300px;
+    }
+
+
+    /* HamburgerMenu */
+
+    .hidd2 {
+        position: relative;
+        text-align: center;
+    }
+
+    .hidd2 {
+        display: none;
+    }
+
+    .hidd2 a {
+        color: #000000;
+
+    }
+
+    .hidd2 ul {
+        padding-left: 0;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .hidd2 ul li {
+        padding: .8rem;
+        padding-right: 1rem;
+
+    }
+
+    .hidd2 ul li:hover {
+        background-color: rgb(164, 157, 160);
+        color: white;
+    }
+
+    .hambmenu:focus~.hidd2 {
+        display: block;
+        position: absolute;
+        right: 50px;
+        top: 20px;
+        background: white;
+        color: rgb(0, 0, 0);
+        border-radius: .5rem 0rem .5rem .5rem;
+        padding: .5rem;
+        width: 200px;
+        box-shadow: 0px 5px 10px rgba(90, 116, 148, .3);
     }
 
 }
