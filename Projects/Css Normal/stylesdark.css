@@ -84,7 +84,7 @@ header {
 
 .white {
     color: var(--color-header-dark);
-    background-color: var(--color-text-dark);
+    background-color: var(--color-footer-border-dark);
 }
 
 .overview {
@@ -169,10 +169,10 @@ header p {
     box-sizing: border-box;
     overflow-y: scroll;
     box-shadow: 2px 0px 9px rgba(0, 0, 0, .8);
+    transition: background-color .6s ease-in-out;
 }
 
 .aside:hover {
-    transition: ease-in-out .4s;
     background-color: var(--color-aside-hover);
     background-blend-mode: color-burn;
 }
