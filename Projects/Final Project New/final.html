@@ -6,13 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSS Final Project</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 
 </head>
 
 <body>
-    <aside class="aside">
+    <aside class="aside mediaHidden">
         <nav>
             <div class="listed">
                 <div>
@@ -24,10 +25,10 @@
 
             </div>
             <hr>
-            <div class="listed">
+            <figure class="listed">
                 <img id="avatar" src="images/prf2.png" alt="Pofile Pic">
                 <h2>Andi Neziri</h2>
-            </div>
+            </figure>
             <hr>
             <div class="list">
                 <ul>
@@ -41,7 +42,7 @@
                             </div>
                         </div>
                     </li>
-                    <li class="listed navi">
+                    <li class="listed navi pointer">
                         <div class="listedLeft">
                             <div class="material-icons">
                                 <span>image</span>
@@ -56,7 +57,7 @@
                             </span>
                         </div>
                     </li>
-                    <li class="listed navi">
+                    <li class="listed navi pointer">
                         <div class="listedLeft">
                             <div class="material-icons">
                                 <span>apps</span>
@@ -71,7 +72,7 @@
                             </span>
                         </div>
                     </li>
-                    <li class="listed navi">
+                    <li class="listed navi pointer">
                         <div class="listedLeft">
                             <div class="material-icons">
                                 <span>content_paste</span>
@@ -86,7 +87,7 @@
                             </span>
                         </div>
                     </li>
-                    <li class="listed navi">
+                    <li class="listed navi pointer">
                         <div class="listedLeft">
                             <div class="material-icons">
                                 <span>table_chart</span>
@@ -101,7 +102,7 @@
                             </span>
                         </div>
                     </li>
-                    <li class="listed navi">
+                    <li class="listed navi pointer">
                         <div class="listedLeft">
                             <div class="material-icons">
                                 <span>location_on</span>
@@ -116,7 +117,7 @@
                             </span>
                         </div>
                     </li>
-                    <li class="listed navi">
+                    <li class="listed navi pointer">
                         <div class="listedLeft">
                             <div class="material-icons">
                                 <span>widgets</span>
@@ -131,7 +132,7 @@
                             </span>
                         </div>
                     </li>
-                    <li class="listed navi">
+                    <li class="listed navi pointer">
                         <div class="listedLeft">
                             <div class="material-icons">
                                 <span>show_chart</span>
@@ -146,7 +147,7 @@
                             </span>
                         </div>
                     </li>
-                    <li class="listed navi">
+                    <li class="listed navi pointer">
                         <div class="listedLeft">
                             <div class="material-icons">
                                 <span>date_range</span>
@@ -168,102 +169,321 @@
 
     <div class="right">
 
-        <div class="header">
+        <header>
             <div class="dash">
-                <span class="material-icons circle">
-                    more_vert
-                </span>
-                <span>Dashboard</span>
+                <div class="mediaHidden">
+                    <span class="material-icons circle white shadowHover pointer" title="See More">
+                        more_vert
+                    </span>
+                </div>
+                <span class="pointer">Dashboard</span>
             </div>
-            <div class="searchBar">
-                <input type="search" placeholder="Search" id="search">
-                <span class="material-icons circle">
-                    search
-                </span>
-                <span class="material-icons">
-                    <span>dashboard</span>
-                </span>
-                <span class="material-icons">
-                    <span>notifications</span>
-                </span>
-                <span class="material-icons">
-                    <span>person</span>
-                </span>
+            <div>
+                <ul class="searchBar">
+                    <li>
+                        <input type="search" placeholder="Search" id="search">
+                        <span class="material-icons circle white shadowHover" title="Search">
+                            search
+                        </span>
+                    </li>
+                    <li>
+                        <span class="material-icons" title="Dashboard">
+                            <span>dashboard</span>
+                        </span>
+                    </li>
+                    <li class="headerIcons">
+                        <span class="lo" tabindex="0">
+                            <span class="material-icons" title="Notifications">
+                                <span>notifications</span>
+                            </span>
+                        </span>
+                        <div class="notificationNuber" tabindex="0">5</div>
+                        <div class="hidd">
+                            <ul>
+                                <li>John Doe liked your post!</li>
+                                <li>Someone viewed your profile!</li>
+                                <li>John Doe liked your post!</li>
+                                <li>Someone viewed your profile!</li>
+                                <li>Another notification</li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <span class="material-icons" title="Profile">
+                            <span>person</span>
+                        </span>
+                    </li>
+                </ul>
+                <div class="hambmenu pointer">
+                    <div name="press" class="material-symbols-outlined pointer">
+                        menu
+                    </div>
+                </div>
             </div>
-        </div>
+
+        </header>
 
 
-        <div class="main">
-            <div class="locations">
-                <div class="firstLine">
-                    <span class="material-icons green">
+        <main>
+            <section class="locations shadowHover white">
+                <article class="firstLine">
+                    <span class="material-icons squareIcons green shadow">
                         language
                     </span>
                     <span class="content">
                         Global Sales by Top Locations
                     </span>
-                </div>
-                <div class="secondLine">
-                    <div>
-                        <table>
+                </article>
+                <article class="secondLine">
+                    <div class="tableWrapper">
+                        <table class="font100">
                             <tr>
-                                <td colspan="5"><img src="images/usa.png" alt="USA" class="country"></td>
+                                <td><img src="images/usa.png" alt="USA" class="country"></td>
                                 <td>USA</td>
                                 <td align="right">2,920</td>
                                 <td align="right">53.23%</td>
                             </tr>
                             <tr>
-                                <td colspan="5"><img src="images/germany.png" alt="Germany" class="country"></td>
+                                <td><img src="images/germany.png" alt="Germany" class="country"></td>
                                 <td>Germany</td>
                                 <td align="right">1300</td>
                                 <td align="right">4.34%</td>
                             </tr>
                             <tr>
-                                <td colspan="5"><img src="images/australia.png" alt="Australia" class="country"></td>
+                                <td><img src="images/australia.png" alt="Australia" class="country"></td>
                                 <td>Australia</td>
                                 <td align="right">760</td>
                                 <td align="right">20.43%</td>
                             </tr>
                             <tr>
-                                <td colspan="5"><img src="images/uk.png" alt="UK" class="country"></td>
+                                <td><img src="images/uk.png" alt="UK" class="country"></td>
                                 <td>United Kingdom</td>
                                 <td align="right">690</td>
                                 <td align="right">10.35%</td>
                             </tr>
                             <tr>
-                                <td colspan="5"><img src="images/romania.png" alt="Romania" class="country"></td>
+                                <td><img src="images/romania.png" alt="Romania" class="country"></td>
                                 <td>Romania</td>
                                 <td align="right">600</td>
                                 <td align="right">7.87%</td>
                             </tr>
                             <tr>
-                                <td colspan="5"><img src="images/brasil.png" alt="Brasil" class="country"></td>
+                                <td><img src="images/brasil.png" alt="Brasil" class="country"></td>
                                 <td> Brasil</td>
                                 <td align="right">690</td>
                                 <td align="right">10.35%</td>
                             </tr>
                         </table>
                     </div>
-                    <div>
+                    <div class="map">
                         <iframe
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d157010.0436062531!2d-73.99832728822288!3d40.70240749202656!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2s!4v1699832155578!5m2!1sen!2s"
-                            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                            referrerpolicy="no-referrer-when-downgrade" class="map"></iframe>
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d76273.20980782849!2d-74.01567369115618!3d40.69972508702974!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2s!4v1699909892137!5m2!1sen!2s"
+                            style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
-                </div>
-            </div>
+                </article>
+            </section>
+            <section class="revenue">
+                <article class="part white shadow shadowHover">
+                    <div>
+                        <span class="material-icons squareIcons shadow orange">
+                            chair
+                        </span>
+                    </div>
+                    <div class="number">
+                        <span class="font100 loremi">Bookings</span>
+                        <span class="font400">184</span>
+                    </div>
 
+                    <div class="down font100">
+                        <span class="material-symbols-outlined ">
+                            warning
+                        </span>
+                        <span>Get more Space</span>
+                    </div>
+                </article>
+                <article class="part white shadow shadowHover">
+                    <div>
+                        <span class="material-icons squareIcons shadow pink">
+                            bar_chart
+                        </span>
+                    </div>
+                    <div class="number">
+                        <span class="font100 loremi">Website Visits</span>
+                        <span class="font400">75.521</span>
+                    </div>
 
-        </div>
+                    <div class="down font100">
+                        <span class="material-symbols-outlined">
+                            sell
+                        </span>
+                        <span>Tracked from Google Analystics</span>
+                    </div>
+                </article>
+                <article class="part white shadow shadowHover">
+                    <div>
+                        <span class="material-icons squareIcons shadow green">
+                            store
+                        </span>
+                    </div>
+                    <div class="number">
+                        <span class="font100 loremi">Revenue</span>
+                        <span class="font400">&#36;34.245</span>
+                    </div>
 
+                    <div class="down font100">
+                        <span class="material-symbols-outlined">
+                            date_range
+                        </span>
+                        <span>Last 24 hours</span>
+                    </div>
+                </article>
+                <article class="part white shadow shadowHover">
+                    <div>
+                        <span class="material-icons squareIcons shadow blue">
+                            public
+                        </span>
+                    </div>
+                    <div class="number">
+                        <span class="font100 loremi">Followers</span>
+                        <span class="font400">+245</span>
+                    </div>
 
-        <div class="footer">
-            <h1>Footer</h1>
-        </div>
-    </div>
-    <main>
+                    <div class="down font100">
+                        <span class="material-symbols-outlined ">
+                            update
+                        </span>
+                        <span>Just updated</span>
+                    </div>
+                </article>
+            </section>
+            <section>
+                <span class="cardTitle">Manage Listings</span>
+            </section>
+            <section>
+                <article class="listings">
+                    <div class="cardList white shadow shadowHover">
+                        <div class="imgHover">
+                            <div>
+                                <img src="images/card-1.jpeg" class="cardPic" alt="Mountain Villa">
+                            </div>
+                            <div class="editKeys pointer">
+                                <span class="material-symbols-outlined overview" title="View">
+                                    overview_key
+                                </span>
+                                <span class="material-symbols-outlined edit" title="Edit">
+                                    edit
+                                </span> <span class="material-symbols-outlined close" title="Delete">
+                                    close
+                                </span>
+                            </div>
+                        </div>
+                        <div class="cardTitle">Cozy 5 Stars Apartaments</div>
+                        <div class="loremi font100">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam iusto quidem doloribus
+                            magni
+                            aspernatur
+                        </div>
+                        <div class="cardFooter">
+                            <span class="lighter">&#36;899/night</span>
+                            <span class="rightFooter loremi font100 ">
+                                <span class="material-icons">
+                                    location_on
+                                </span>
+                                <span>
+                                    Barcelona, Spain
+                                </span>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="cardList white shadow shadowHover">
+                        <div class="imgHover">
+                            <div>
+                                <img src="images/card-2.jpeg" class="cardPic" alt="Mountain Villa">
+                            </div>
+                            <div class="editKeys pointer">
+                                <span class="material-symbols-outlined overview " title="View">
+                                    overview_key
+                                </span>
+                                <span class="material-symbols-outlined edit" title="Edit">
+                                    edit
+                                </span>
+                                <span class="material-symbols-outlined close" title="Delete">
+                                    close
+                                </span>
+                            </div>
+                        </div>
+                        <div class="cardTitle">Office Studio</div>
+                        <div class="loremi font100">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam iusto quidem doloribus
+                            magni
+                            aspernatur ad maiores tenetur!
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
 
-    </main>
+                        </div>
+                        <div class="cardFooter">
+                            <span class="lighter">&#36;1.119/night</span>
+                            <span class="rightFooter loremi font100 ">
+                                <span class="material-icons">
+                                    location_on
+                                </span>
+                                <span>
+                                    London, UK
+                                </span>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="cardList white shadow shadowHover">
+                        <div class="imgHover">
+                            <div>
+                                <img src="images/card-3.jpeg" class="cardPic" alt="Mountain Villa">
+                            </div>
+                            <div class="editKeys pointer">
+                                <span class="material-symbols-outlined overview" title="View">
+                                    overview_key
+                                </span>
+                                <span class="material-symbols-outlined edit" title="Edit">
+                                    edit
+                                </span>
+                                <span class="material-symbols-outlined close" title="Delete">
+                                    close
+                                </span>
+                            </div>
+                        </div>
+                        <div class="cardTitle">Beautiful Castle</div>
+                        <div class="loremi font100">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam iusto quidem doloribus
+                            magni
+                            aspernatur ad maiores tenetur!
+                        </div>
+                        <div class="cardFooter">
+                            <span class="lighter">&#36;459/night</span>
+                            <span class="rightFooter loremi font100 ">
+                                <span class="material-icons">
+                                    location_on
+                                </span>
+                                <span>
+                                    Milan, Italy
+                                </span>
+                            </span>
+                        </div>
+                    </div>
+                </article>
+            </section>
+        </main>
+        <footer>
+            <nav>
+                <ul class="list2">
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#">COMPANY</a></li>
+                    <li><a href="#">PORTFOLIO</a></li>
+                    <li><a href="#">BLOG</a></li>
+                </ul>
+            </nav>
+            <article class="original lorem font100">
+                <i>&copy;John Doe, 2023</i>
+            </article>
+        </footer>
 </body>
 
 </html>
