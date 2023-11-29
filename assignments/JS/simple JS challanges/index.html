@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>challange</title>
+</head>
+
+<body>
+
+    <!-- Below you have a few JavaScript Challanges to try for yourself:
+
+Ask the user for the number of kilometers and then output how many miles is that. For example, if the user writes 3.2 you would say that is 2 miles. Remember, 1 mile is 1.6 kilometers.
+Ask the user for the radius of a circle and then output the area of the circle. Remember, the area of the circle is PI times the radius squared - look this up online.
+This is the same as challenge 1 but you will be converting from euros to dollars. -->
+
+
+    <script>
+
+        //first challange
+        const kilometers = parseInt(prompt(`How many Kilometers?`));
+        const mile = kilometers * 0.621371;
+
+        alert(`That is ${mile} miles.`);
+
+
+        //second challange
+        const radius = parseInt(prompt('What is the radius of the circle?'));
+        const area = 3.14 * radius;
+
+        alert(`The area of the circle is ${area}.`);
+
+
+        //third challange
+        const euro = parseInt(prompt(`How many Euros?`));
+        const dollar = euro * 1.09718;
+
+        alert(`That is ${dollar} dollars.`);
+
+    </script>
+</body>
+
+</html>
