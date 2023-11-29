@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Year of Birth</title>
+</head>
+
+<body>
+    <!-- Submit Assignment
+Write a program that prompts the user write their age and then in the console it writes: You are {age} years old so you were probably born in the year {yearOfBirth}. Think of a mathematical way to detemine the year of birth based on the age. Good luck! -->
+
+    <script>
+        let age = prompt(`Your Age?`);
+        let yearOfBirth = 2023 - age;
+
+        let description = `You are ${age} years old so you were probably born in the year ${yearOfBirth}.`
+        console.log(description);
+    </script>
+</body>
+
+</html>
