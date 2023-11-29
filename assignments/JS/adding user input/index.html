@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>user input</title>
+</head>
+
+<body>
+    <!-- Write a program that prompts the user two times to write two numbers and then alerts the user with the sum of those two numbers (the sum means adding those two numbers).
+
+See if it works the first time but it probably won't. The reason is that JavaScript considers the user input as Strings so it doesn't add the values but it simply concatenates them. To avoid this, you have to use parseInt() on the variables to convert them from a String to a Number like so firstNumber = parseInt(prompt('Write the first number')); -->
+
+
+    <script>
+        const firstNumber = parseInt(prompt('Write the first number'));
+        const secondNumber = parseInt(prompt('Write the second number'));
+        const sum = firstNumber + secondNumber;
+
+        alert(`The sum of those two numbers is ${sum}`)
+    </script>
+</body>
+
+</html>
