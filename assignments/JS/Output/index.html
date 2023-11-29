@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Output</title>
+</head>
+
+<body>
+
+    <!-- b is overwritten by the value of 44,
+    c is equal to b which means 44,
+    b is equal to a which means 44,
+    same goes for so it means that the console log will show the walue of 44 -->
+
+    <script>
+        let a = 77;
+        let b = 55;
+        let c;
+        b = 44;
+        c = b;
+        b = a;
+        a = c;
+        console.log(a);
+    </script>
+</body>
+
+</html>
