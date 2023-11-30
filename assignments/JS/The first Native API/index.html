@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Native API</title>
+</head>
+
+<body>
+    <!-- In this assignment you will be creating the following program. When the user enters the webpage the are presented with a popup that reads "Which website do you want to visit?" and the user writes a simple word like "google, facebook, youtube, johndoe, whatever" and after clicking "OK" they are redirected the page "https://www.{whatever they wrote}.com". Don't worry if the website doesn't exist.
+
+    We already discussed how to get the inpur from the user using prompt and how to interpolate it into the string that looks like a URL. However, in order to redirect the user you will have to use a Native API which allows you to relocate the user easily. The following line of code redirects the user to Instagram:
+    
+    location.href = 'https://www.instagram.com';
+    The idea is that whenever you change the value of the variable location.href the webpage will go to that url.
+    
+    If you want to take this one step further, you can ask the user "What do you want to search on Google?" and then redirect them to the page "https://www.google.com/search?q={user input here}", or similarly to Youtube at "https://www.youtube.com/results?search_query={user input here}". -->
+
+
+    <script>
+        // let website = prompt("Shkruaj website-in qe deshiron ta vizitosh:");
+        // window.open = `https://www.${website}.com`;
+
+
+        let userInput = prompt("Cfare deshironi te shikoni ne Youtube?");
+        location.href = `https://www.youtube.com/results?search_query=${userInput}`;
+    </script>
+</body>
+
+</html>
