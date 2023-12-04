@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leap Year</title>
+</head>
+
+<body>
+
+    <!-- Write a program that gets the year from the user like 2001, 1984, or 1872 and then tells the user if that year is a Leap Year. Note that a leap year is a year in which the month of February has 29 days. A Leap year occurs every fourth year (so, if the year is divisible by 4 like 4, 8, 12, ...), but every 100 years it doesn't occur unless it's been 400 years (so, it doesn't happen on the year 500, 600, 700 but it happens on 800).
+
+In essence, a Leap Year is divisible by 4, but not by 100 unless it is divisible by 400. Write the correct condition that checks for this. -->
+
+
+    <script>
+        let userYear = parseInt(prompt('Type the Year.'))
+        let theAnswer;
+
+        if ((userYear % 4 !== 0) || (userYear % 100 === 0 && userYear % 400 !== 0)) {
+            theAnswer = 'Common Year';
+        }
+        else {
+            theAnswer = 'Leap Year';
+        }
+
+        console.log(`This is a ${theAnswer} `);
+
+    </script>
+</body>
+
+</html>

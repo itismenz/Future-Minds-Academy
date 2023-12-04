@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>What's my grade!</title>
+</head>
+
+<body>
+
+    <!-- Create a program that gets a number from 0 to 100 from the user which represent the points the user has gotten in the test. From this you're going to give the user a grade from 1 to 5 depending on their points like so:
+
+    0-19 points is the grade 1
+    20-39 points is the grade 2
+    40-59 points is the grade 3
+    60-79 points is the grade 4
+    80-100 points is the grade 5
+    Display this grade using a pretty message in the console.
+    
+    Bonus points: Check if the user input is not a number at all, is a number smaller than 0, or a number bigger than 100, and simply output "There was an error in your input" -->
+
+    <script>
+
+        let userNumber = parseInt(prompt('What is your number, from 0 to 100.?'));
+        let grade;
+
+        if ((userNumber <= 0) && (userNumber >= 19)) {
+            grade = 1;
+            console.log('I know you can do more.');
+        }
+        else if ((userNumber > 19) && (userNumber < 40)) {
+            grade = 2;
+            console.log('Nice job but you need to try more.');
+
+        }
+        else if ((userNumber > 39) && (userNumber < 60)) {
+            grade = 3;
+            console.log('Good job, could`ve been better!');
+
+        }
+        else if ((userNumber > 59) && (userNumber < 80)) {
+            grade = 4;
+            console.log('Great job!');
+
+        }
+        else if ((userNumber > 79) && (userNumber <= 100)) {
+            grade = 5;
+            console.log('Awsomeeeeee!');
+
+        }
+        else {
+            console.log("There was an error in your input");
+        }
+
+        console.log(`Your grade is ${grade}!`);
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Largest of three numbers</title>
+</head>
+
+<body>
+    <!-- In the last session we checkout out an algorithm to swap two variables. In this assignment you will be writing another algorithm to find the largest number from 3 numbers. Assume that you have the variables a, b, and c which are numbers you get as input from the user. Write some code to determine which of the numbers is the largest and output it in the console. Try different inputs to see if the algorithm you wrote is working correctly. -->
+
+
+    <script>
+        let a = parseInt(prompt('First Number'));
+        let b = parseInt(prompt('Second Number'));
+        let c = parseInt(prompt('Third Number'));
+
+        if (a > b && a > c) {
+            console.log(`The largest number is the first number which is ${a}`);
+        }
+        else if (b > a && b > c) {
+            console.log(`The largest number is the second number which is ${b}`);
+        }
+        else {
+            console.log(`The largest number is the third number which is ${c}`);
+        }
+    </script>
+</body>
+
+</html>
