@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <label for="name">Enter your name:</label>
+    <input type="text" id="name" placeholder="2">
+
+
+
+
+    <script>
+        let gjuha = prompt(`Cfare gjuhe flisni?`);
+
+        let plcHld;
+        if (gjuha == 'en') {
+            plcHld = 'John Doe';
+        }
+        else if (gjuha == 'sq') {
+            plcHld = 'Filan Fisteku';
+        }
+        else if (gjuha == 'de') {
+            plcHld = 'Max Mustermann';
+        }
+        else {
+            throw new Error('Unknown Language')
+        }
+
+        console.log(plcHld);
+        document.getElementById('name').placeholder = plcHld;
+    </script>
+</body>
+
+</html>

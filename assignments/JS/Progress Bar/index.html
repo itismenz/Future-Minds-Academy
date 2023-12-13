@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+        }
+
+        .progress-bar-container {
+            padding: 0.5rem;
+            display: grid;
+            gap: 0.5rem;
+            justify-items: center;
+        }
+
+        .indicator {
+            font-family: monospace;
+            color: rgb(0, 0, 0);
+        }
+
+        .progress-bar-wrapper {
+            padding: 0.1rem;
+            height: 90vh;
+            border: 1px solid black;
+            width: 3%;
+            display: flex;
+            flex-direction: column-reverse;
+            /* for changing the indicator direction (from bottom to top) */
+        }
+
+        .progress-bar {
+            background-color: green;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="progress-bar-container">
+        <span class="indicator">100%</span>
+        <div class="progress-bar-wrapper">
+            <div id="bar" title="andi" class="progress-bar"></div>
+        </div>
+        <span id="progressNumber" class="indicator" title='title'>0%</span>
+    </div>
+
+
+    <script>
+        let percentage = parseInt(prompt('What is the progress?'));
+        let color;
+
+
+        if (isNaN(percentage) || percentage < 0 || percentage > 100)
+            throw new Error('Write a valid percentage!');
+
+        if (percentage <= 20)
+            color = 'darkred';
+        else if (percentage <= 50) {
+            color = 'orange';
+        }
+        else if (percentage <= 80) {
+            color = 'pink';
+        }
+        else {
+            color = 'green';
+        }
+
+
+        let progressNumber = document.getElementById('progressNumber')
+        progressNumber.textContent = `${percentage}%`
+
+        let progressBar = document.getElementById('bar')
+        progressBar.style.backgroundColor = color
+        progressBar.style.height = `${percentage}%`
+        progressBar.setAttribute('title', `${percentage}%`)
+    </script>
+</body>
+
+</html>

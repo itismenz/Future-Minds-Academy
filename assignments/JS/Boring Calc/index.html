@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <script>
+        // let operator = prompt('What operation do you want to apply?').toLowerCase();
+        // let firstNumber = parseFloat(prompt('Write the first number:'));
+        // let secondNumber = parseFloat(prompt('Write the second number:'));
+
+        // let result;
+
+        // if (isNaN(firstNumber) || isNaN(secondNumber)) {
+        //     throw new Error('Please write the valid numbers!');
+        // }
+        // else {
+
+        //     if (operator == 'mbledhje') {
+        //         result = firstNumber + secondNumber;
+        //     }
+        //     else if (operator == 'zbritje') {
+        //         result = firstNumber - secondNumber;
+        //     }
+        //     else if (operator == 'shumzim') {
+        //         result = firstNumber * secondNumber;
+        //     }
+        //     else if (operator == 'pjestim') {
+        //         if (secondNumber == 0) {
+        //             throw new Error('Can\'t divide by zero')
+        //         }
+        //         result = firstNumber / secondNumber;
+        //     }
+        //     else {
+        //         throw new Error('Unknown Operator');
+        //     }
+        // }
+
+        // console.log(result);
+
+
+        let operator = prompt('What operation do you want to apply?').toLowerCase();
+        let firstNumber = parseFloat(prompt('Write the first number:'));
+        let secondNumber = parseFloat(prompt('Write the second number:'));
+        let result;
+        let error;
+
+
+        switch (true) {
+            case (operator == 'mbledhje'):
+                result = firstNumber + secondNumber;
+                break;
+            case (operator == 'zbritje'):
+                result = firstNumber - secondNumber;
+                break;
+            case (operator == 'shumzim'):
+                result = firstNumber * secondNumber;
+                break;
+            case (operator == 'pjestim'):
+                if (secondNumber == 0) {
+                    error = new Error('Can\'t divide by zero');
+                }
+                result = firstNumber / secondNumber;
+                break;
+            default:
+                error = new Error('Unknown Operator');
+                break;
+        }
+
+
+        if (error) {
+            alert(error);
+        } else {
+            alert(`Rezultati eshte ${result}`);
+        }
+
+    </script>
+</body>
+
+</html>
