@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+
+
+    <script>
+        let scoreDolphins = (97 + 112 + 81) / 3;
+        let scoreKoalas = (109 + 95 + 86) / 3;
+        console.log(`the Dolphins score is ${scoreDolphins} and the Koalas score is ${scoreKoalas}`);
+
+        if (scoreDolphins > scoreKoalas && scoreDolphins >= 100 && scoreKoalas >= 100) {
+            console.log("Dolphins win the trophy");
+        }
+        else if (scoreDolphins < scoreKoalas && scoreDolphins >= 100 && scoreKoalas >= 100) {
+            console.log("Koalas win the trophy");
+        }
+        else if (scoreDolphins === scoreKoalas && scoreDolphins >= 100 && scoreKoalas >= 100) {
+            console.log("Both win the trophy");
+        }
+        else {
+            console.log(`no team wins the trophy`)
+        }
+    </script>
+
+</body>
+
+</html>

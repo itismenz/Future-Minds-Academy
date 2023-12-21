@@ -1,0 +1,132 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background-color: rgb(7, 37, 44);
+    display: grid;
+    grid-template-rows: auto 1fr;
+    margin: 0;
+    font-family: roboto;
+    color: aliceblue;
+}
+
+.dFlex {
+    display: flex;
+}
+
+.gap2 {
+    gap: 2rem;
+}
+
+header {
+    grid-row-start: 1;
+    grid-column-end: 2;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: white;
+    background-color: rgb(19, 56, 84);
+    align-items: center;
+    padding: 0.5rem 1rem;
+}
+
+main {
+    display: grid;
+    grid-template-rows: auto 1fr;
+    padding: 4rem;
+
+}
+
+
+article {
+    text-align: center;
+    padding: 2rem;
+    font-size: 3rem;
+    font-weight: 100;
+}
+
+
+.dNone {
+    visibility: hidden;
+}
+
+.dNone1 {
+    visibility: hidden;
+}
+
+.textCenter {
+    text-align: center;
+}
+
+.justifyContentCenter {
+    justify-content: center;
+}
+
+.card {
+    background-color: rgb(5, 29, 50);
+    text-align: center;
+    border-radius: 2rem;
+    background: rgba(255, 255, 255, 0.15);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.075);
+}
+
+.green {
+    background-color: greenyellow;
+}
+
+.card:hover .dNone1 {
+    visibility: visible;
+}
+
+.dNone1:hover .dNone {
+    visibility: visible;
+}
+
+.searchBar {
+    outline: none;
+    background-color: rgb(153, 153, 150);
+    padding: 1rem;
+    border-radius: 3rem;
+    width: 40%;
+
+}
+
+.cardWrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem;
+}
+
+.bold {
+    font-weight: 900;
+}
+
+ul {
+    display: flex;
+    gap: 2rem;
+    padding-left: 0;
+
+}
+
+ul li,
+ul li a {
+    list-style-type: none;
+    text-decoration: none;
+    color: aliceblue;
+    font-weight: bold;
+}
+
+.logo {
+    height: 4rem;
+}
+
+.createButton {
+    background: rgb(65, 6, 73);
+    background: linear-gradient(90deg, rgba(65, 6, 73, 1) 0%, rgba(154, 18, 195, 1) 35%, rgba(0, 212, 255, 1) 100%);
+    padding: 0.5rem;
+    border-radius: 2rem;
+}
